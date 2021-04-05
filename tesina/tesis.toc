@@ -1,0 +1,12 @@
+\babel@toc {spanish}{}
+\babel@toc {spanish}{}
+\contentsline {chapter}{Introducción}{\es@scroman {v}}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Teor\'ia}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Un m\'etodo para encontrar \'orbitas peri\'odicas de mapeos de 2D.}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Método de parametrización}{5}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Implementaci\'on del m\'etodo}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Desarrollo explícito para el mapeo estándar}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Implementación del método}{11}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Ejemplos de aplicación del método}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}\'Orbitas peri\'odicas hiperb\'olicas y sus variedades.}{19}{section.3.1}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{27}{chapter*.16}%

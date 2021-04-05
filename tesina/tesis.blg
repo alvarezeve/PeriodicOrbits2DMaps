@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: tesis.aux
+A level-1 auxiliary file: Declaracion/Declaracion.aux
+A level-1 auxiliary file: introduccion/introduccion.aux
+A level-1 auxiliary file: Capitulo1/preliminares.aux
+A level-1 auxiliary file: Capitulo2/parametrizacion.aux
+A level-1 auxiliary file: Capitulo3.aux
+The style file: unsrt.bst
+Database file #1: referencias.bib
+Warning--entry type for "Mireles2" isn't style-file defined
+--line 13 of file referencias.bib
+"{" immediately follows a field name---line 277 of file referencias.bib
+ :  year
+ :      {2010}
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 294 of file referencias.bib
+ :  
+ :  author = {Lang Serge}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Too many commas in name 1 of "Á. Haro, M. Canadell, J. Figueras,A. Luque y J. Mondelo" for entry Haro
+while executing---line 944 of file unsrt.bst
+Warning--empty year in Friedberg
+Warning--empty year in Numerics
+Warning--empty author and editor in lang
+Warning--empty publisher in lang
+Warning--empty year in lang
+You've used 33 entries,
+            1791 wiz_defined-function locations,
+            632 strings with 7502 characters,
+and the built_in function-call counts, 5177 in all, are:
+= -- 460
+> -- 117
+< -- 5
++ -- 61
+- -- 28
+* -- 220
+:= -- 780
+add.period$ -- 96
+call.type$ -- 33
+change.case$ -- 27
+chr.to.int$ -- 0
+cite$ -- 38
+duplicate$ -- 293
+empty$ -- 647
+format.name$ -- 28
+if$ -- 1223
+int.to.chr$ -- 0
+int.to.str$ -- 33
+missing$ -- 44
+newline$ -- 163
+num.names$ -- 28
+pop$ -- 165
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 92
+stack$ -- 0
+substring$ -- 132
+swap$ -- 43
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 5
+while$ -- 34
+width$ -- 35
+write$ -- 341
+(There were 3 error messages)

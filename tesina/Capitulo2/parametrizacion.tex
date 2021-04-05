@@ -1,0 +1,257 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%           Capítulo 2: MARCO TEÓRICO - REVISIÓN DE LITERATURA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Implementaci\'on del m\'etodo}
+En este cap\'itulo se describe brevemente c\'omo se implement\'o el m\'etodo para encontrar puntos fijos. Sobre el m\'etodo de la parametrizaci\'on implemetado se puede revisar la referencia ******** en donde se describe tambi\'en c\'omo se aplic\'o al mapeo est\'andar. 
+
+\section{Desarrollo explícito para el mapeo estándar}
+
+El mapeo et\'andar es uno de los mapeos m\'as estudiados, esta dado por 
+
+\begin{equation}
+M_{\kappa}(x_{n},y_{n}) = 
+\left(\begin{array}{c}
+x_{n} +y_{n+1} \\
+y_{n}-\kappa\sin(2\pi x_{n})/2\pi
+\end{array}\right)
+\label{mapeo estandar}
+\end{equation}
+con $\kappa$ un par\'ametro y $x\in [0,1]$. Escrito de esta forma el mapeo se descompone en el producto de dos involuciones dadas por
+\begin{equation}
+I_{0}\left( \begin{array}{c}
+x_{n}\\
+y_{n}
+\end{array}\right) = 
+\left(\begin{array}{c}
+-x_{n}\\
+y_{n}-\frac{\kappa}{1\pi}\sin(2\pi x_{n})
+\end{array}
+\right)
+\label{involucionA}
+\end{equation}
+\begin{equation}
+I_{1}\left( \begin{array}{c}
+x_{n}\\
+y_{n}
+\end{array}\right) = 
+\left(\begin{array}{c}
+y_{n}-x_{n}\\
+y_{n}
+\end{array}
+\right)
+\label{involucionB}
+\end{equation}
+
+Los conjuntos invariantes asociados a las involuciones \eqref{involucionA}, \eqref{involucionB} son los siguientes
+\begin{equation}
+\mathbb{J}_{0} = \{ x \in [0,1] |x=0, x=1/2\}
+\label{invariantejA}
+\end{equation}
+
+\begin{equation}
+\mathbb{J}_{1} = \{ x \in [0,1] |x=\frac{y}{2}, x=\frac{y+1}{2}\}
+\label{invariantejB}
+\end{equation}
+
+Entonces siguiendo el resultado del Corolario 1, sea $(x_{0},y_{0})\in \mathbb{J}_{0}$ si buscamos una \'orbita de periodo 2 tendremos que resolver 
+\begin{equation*}
+M_{\kappa}(x,y) = M_{\kappa}(0,y)=(1/2,y)
+\end{equation*}
+lo cual se reduce a que
+\begin{equation*}
+y=1/2.
+\end{equation*}
+Por lo que entonces afirmamos que el punto $(0,1/2)$ es un punto de periodo 2. La \'orbita encontrada es $\{(0,1/2), (1/2,1/2)\}$ , recordemos que la variable $x$ est\'a definida en el intervalo $[0,1]$ por lo que se debe tomar m\'odulo 1 en esa componente. \\
+
+Una vez encontrada un \'orbita peri\'odica es necesario determinar la estabilidad de la misma. Para ello se usa la linearizaci\'on alrededor del punto fijo. En este caso se toma como punto fijo  del mapeo  $M^{n}_{k}(x_{0},y_{0})=(x_{0},y_{0})$, un punto de la \'orbita peri\'odica. La estabilida esta dada por los valores propios del jacobiano $DM^{n}_{\kappa}(x_{0},y_{0})$. Para calcular este jacobiano no hace falta hacer la composici\'on solo hace falta usar la regla de la cadena y la \'orbita peri\'odica.
+\begin{align*}
+DM^{n}_{\kappa}(x_{0},y_{0}) &= D(M_{\kappa}(M_{\kappa}(\cdots M_{\kappa}(x_{0},y_{0}))))\\
+& = DM_{\kappa}(M^{n-1}(x_{0},y_{0}))DM_{\kappa}(M^{n-2}_{\kappa}(x_{n-2},y_{n-1}))\cdots DM_{\kappa}(x_{0},y_{0})\\
+& = DM_{\kappa}(x_{n-1},y_{n-1})DM_{\kappa}(x_{n-2},y_{n-2})\cdots DM_{\kappa}(x_{0},y_{0}).
+\end{align*}
+Entonces el jacobiano $DM^{n}_{\kappa}(x_{0},y_{0})$ se puede calcular evaluando el jacobiano del mapeo est\'andar en los puntos de la \'orbita y multiplicando las matrices. El jacobiano del mapeo es\'andar es
+\begin{eqnarray}
+M^{n}_{k}(x_{n},y_{n})=\begin{pmatrix}
+1 & 1 \\
+- \kappa\cos(2\pi x_{n})& 1\\ 
+\end{pmatrix},
+\label{jacobiano mapeo}
+\end{eqnarray}
+y la \'orbita se conoce si se conoce solo uno de los puntos. Usando el hecho de que el determinante del producto es el producto de los determinantes se tiene que 
+\begin{equation}
+\textrm{det}DM^{n}_{\kappa}(x_{0},y_{0}) = \left(\textrm{det} DM(x_{n-1},y_{n-1})\right) \cdots \left(\textrm{det} DM(x_{0},y_{0})\right).
+\label{determinante jacobiano m}
+\end{equation} 
+Si los valores propios asociados al polinomio caracter\'istico de la ecuaci\'on \eqref{determinante jacobiano m} tienen m\'odulo mayor que uno y menor que uno entonces tenemos que $(x_{0},y_{0})$ es un punto hiperb\'olico lo que indica que la \'orbita encontrada es hiperb\'olica. \\
+
+Una vez que se tiene calculada una \'orbita peri\'odica hiperb\'olica del mapeo se aplica el m\'etodo de la parametrizaci\'on para describir las variedades invariantes asociadas a tal \'orbita. 
+
+
+Escribimos las variables ($x,y$) como dos polinomios de variable real $t$
+\begin{eqnarray}
+x(t)=\sum_{n=0}^{\infty}a_{n}t^{n}  ,
+\label{x}
+\end{eqnarray}
+\begin{eqnarray}
+y(t)=\sum_{n=0}^{\infty}b_{n}t^{n},
+\label{y}
+\end{eqnarray}
+tal que $\mathcal{P}(t):=(x(t),y(t))$. En cuanto a la dinámica interna $g$, se usa la ecuación $g(t)=\lambda t$ \eqref{funciong1}. Después de sustituir esto en $M\circ\mathcal{P}=\mathcal{P}\circ g$ \eqref{Ecua de invariancia} para el mapeo estándar se obtiene
+\begin{eqnarray}
+M_{\kappa}(x,y) = \left[\begin{array}{c}
+x(t) + y(t) -\frac{\kappa}{2\pi}\sin(2\pi x(t)) \\
+y(t) - \frac{\kappa}{2\pi}\sin[2\pi x(t)]
+\end{array}\right] =\left[ \begin{array}{c}
+x(\lambda t) \\
+y(\lambda t)
+\end{array}\right], 
+\label{sumas en mapeo}
+\end{eqnarray}
+que en forma explícita es
+\begin{eqnarray}
+\left[\begin{array}{c}
+\sum_{n=0}^{\infty}a_{n}t^{n} + \sum_{n=0}^{\infty}b_{n}t^{n} -\frac{\kappa}{2\pi}\sin\left(2\pi \sum_{n=0}^{\infty}a_{n}t^{n}\right)\\
+\sum_{n=0}^{\infty}b_{n}t^{n} - \frac{\kappa}{2\pi}\sin(\sum_{n=0}^{\infty}b_{n}t^{n})
+\end{array}\right] =\left[ \begin{array}{c}
+\sum_{n=0}^{\infty}a_{n}\lambda^{n}t^{n} \\
+\sum_{n=0}^{\infty}b_{n}\lambda^{n}t^{n}
+\end{array}\right].
+\label{expandida}
+\end{eqnarray}
+al desarrollar las sumas y usar la serie de Taylor el seno se puede obtener una ecuaci\'on para comparar los t\'erminos de \'orden 0. 
+
+\begin{align*}
+	\left[
+	\begin{array}{c}
+		\sum_{n=0}^{\infty}a_{n}t^{n} + \sum_{n=0}^{\infty}b_{n}t^{n}-\frac{\kappa}{2\pi}\sum_{n=0}^{\infty}\frac{(-1)^{n}}{(2n+1)!}\left(2\pi \sum_{n=0}^{\infty}a_{n}t^{n}\right)^{2n+1}\\
+		\sum_{n=0}^{\infty}b_{n}t^{n}-\frac{\kappa}{2\pi}\sum_{n=0}^{\infty}\frac{(-1)^{n}}{(2n+1)!}\left(2\pi\sum_{n=0}^{\infty}a_{n}t^{n}\right)^{2n+1}
+	\end{array}	\right]
+	&=\\
+	\left[
+	\begin{array}{c}
+		\sum_{n=0}^{\infty}a_{n}\lambda^{n}t^{n} \\
+		\sum_{n=0}^{\infty}b_{n}\lambda^{n}t^{n}
+	\end{array}
+	\right]
+\end{align*}
+Desarrollando las sumas y agrupando los t\'erminos de \'orden cero.
+\begin{equation}
+	\left[
+	\begin{array}{c}
+	
+			a_{0}+b_{0}-\frac{\kappa}{2\pi}\left(2\pi a_{0}-\frac{2\pi}{3!} 	a_{0}^{3}+\frac{2\pi}{5!} a_{0}^{5}-\cdots
+			\right)\\
+			b_{0}-\frac{\kappa}{2\pi}\left(2\pi a_{0}-\frac{2\pi}{3!}a_{0}^{3}+\frac{2\pi}{5!}a_{0}^{5}-\cdots\right)
+	\end{array}
+	\right]=
+	\left[
+	\begin{array}{c}
+		a_{0}\\
+		b_{0}
+	\end{array}
+	\right]
+\end{equation}
+De donde se obtiene que $a_{0},b_{0}$ son cero. An\'alogamente se pueden agrupar los de primer orden y obtener un sistema que se resulve a partir de los coeficientes $a_{0}$ y $b_{0}$. De manera sucesiva se puede obtener los t\'erminos de orden $n$. Para m\'as detalle de c\'omo se encuentran los coeficientes consultar REFERENCIA DE TESIS!!!. 
+
+
+\section{Implementación del método}
+La implementaci\'on del m\'etodo consiste principalmente en aplicar un m\'etodo de Newton para encontrar ra\'ices. Para encontrar las \'orbitas peri\'odicas, dado el mapeo y los conjuntos invariantes de las simetr\'ias se puede buscar una \'orbita peri\'odica de periodo $n$ usando una semilla. En la siguiente tabla se exquematiza c\'omo se calcula, sin embargo se recomienda que para mayor detalle viste \url{https://github.com/alvarezeve/Tesis-Variedades-Estables-e-inestables/}.
+En la liga se encuentra la documentaci\'on necesaria para poder usar el m\'etodo as\'i como algunos ejemplos. \\
+\linebreak
+\linebreak
+\linebreak
+\begin{center}
+	\textcolor{blue}{\textbf{Pasos}}
+	\begin{tabbing}
+	12\=1234567890123456789012345678901234567890123456\=12345678901234567890123456\kill%
+	\>............................................................  \>..................................................\\
+	\>\textbf{1.}  Se reciben el mapeo, las involuciones,  \> \\
+	\>el periodo y una semilla. \>$M, I_{A}, I_{B},n,v_{0}$ \\
+	\>............................................................  \>..................................................\\
+	\>\textbf{2.} Se crea un nuevo mapeo que es \> \\
+	\> la composición del mapeo $k$ veces.\>  $f(v)=M^{k}(v)$ \\
+	\>............................................................  \>..................................................\\
+	\>\textbf{3.} Se toma un punto en el conjunto  \> $J_{A}$\\
+	\> invariante \> \\
+	\>............................................................  \>..................................................\\
+	\>\textbf{4.} Se toma la composición del mapeo iterado\> \\
+	\> con el punto tomado en el paso anterior.\> $f(p)$\\
+	\>............................................................  \>..................................................\\
+	\>\textbf{5.} Se usa la ecuación que describe \> \\
+	\> el conjunto $J_{B}$ y se construye una nueva \> $g(f(p))=0$\\
+	\>ecuación. \> \\
+	\>............................................................  \>..................................................\\
+	\>\textbf{6.}  Se usa un método de Newton para \> \\
+	\> encontrar la raíz de la ecuación del paso 5.\> \\
+	\>............................................................  \>..................................................\\
+	\end{tabbing} 
+\end{center}
+
+La implementaci\'on del m\'etodo de parametrizaci\'on fue resultado de un trabajo anterior CITAR TESIS!, por lo que solo se decribir\'a de manera muy superficial lo programado. Al igual que en el caso del m\'etodo para las \'orbitas peri\'odicas se puede encontrar la documentaci\'on en \url{https://github.com/alvarezeve/Tesis-Variedades-Estables-e-inestables/}. 
+
+\begin{center}
+	\textcolor{blue}{\textbf{Pasos}}
+	\begin{tabbing}
+		12\=1234567890123456789012345678901234567890123456\=12345678901234567890123456\kill%
+		\>............................................................  \>..................................................\\
+		\>\textbf{1.} Se reciben el mapeo, el punto fijo  \> \\
+		\> el orden del polinomio, el intervalo en el que \> $M, O, pf, t, \Delta t$\\
+		\> se va a evaluar y el paso.\> \\
+		\>............................................................  \>..................................................\\
+		\>\textbf{2.} Se crean dos polinomios de grado 1  \> $P_{x} = a_{0}+a_{1}t+O(t^{2})$\\
+		\> asociados a las variables del mapeo. \>  $P_{y} = b_{0} +b_{1}t+O(t^{2})$ \\
+		\>............................................................  \>..................................................\\
+		\>\textbf{3.} Se aplica el mapeo a los polinomios.  \> $M(P_{x}+P_{y})$\\
+		\>............................................................  \>..................................................\\
+		\>\textbf{4.} Se calcula la matriz jacobiana del sistema \> \\
+		\>anterior y se calculan los valores y vectores propios.\> $JM(P_{x},P_{y})$\\
+		\>............................................................  \>..................................................\\
+		\>\textbf{5.} Se elige el valor propio asociado a la  \> \\
+		\>variedad que se está calculando \> $\lambda$\\
+		\>............................................................  \>..................................................\\
+		\>\textbf{6.}Se resuelve para $a_{1},b_{1}$\\
+		\> \> \\
+		\>............................................................  \>..................................................\\
+		\> \textbf{7. }Se sustituyen los valores de $a_{1},b_{1}$ \> $P_{x} = a_{0}+a_{1}t+a_{2}t^{2}+O(t^{3})$\\
+		\> en los polinomios $P_{x},P_{y}$ y se aumenta\>  $P_{y} = b_{0} +b_{1}t +b_{2}t^{2}+O(t^{3})$\\
+		\>  el orden.\> \\
+		\>............................................................  \>..................................................\\
+		\>\textbf{8.} Se aplica el mapeo a los nuevos\>$M(P_{x}+P_{y})$ \\
+		\> polinomios.\>\\
+		\>............................................................  \>..................................................\\
+		\>\textbf{9.} Se crea el polinomio \> $P_{\lambda x} = a_{0}+a_{1}\lambda t+a_{2}\lambda t^{2}+O(t^{3})$\\
+		\> \>$P_{\lambda y} = b_{0}+b_{1}\lambda t+b_{2}\lambda t^{2}+O(t^{3})$\\
+		\>............................................................  \>..................................................\\
+		\>\textbf{10.} Se crea una ecuación con la resta \> $M(P_{x}+P_{y}) -(P_{\lambda x},P_{\lambda y})$=0 \\
+		\> de las ecuaciones del paso 8 y 9.\> \\
+		\>............................................................  \>..................................................\\
+		\> \textbf{11.} Se resuelve la ecuación del paso 10 \>  \\
+		\> para las variables $a_{2},b_{2}$. \>\\
+		\>............................................................  \>..................................................\\
+		\> \textbf{12.} Se regresa al paso 7. y se itera\> \\
+		\> hasta que se llegue al orden deseado. \> \\
+		\>............................................................  \>..................................................\\
+		
+		
+		
+		
+	\end{tabbing} 
+\end{center}
+
+
+En ambas implementaciones se añadi\'o una forma de evaluar el error num\'erico. Para las \'orbitas peri\'odicas se tom\'o la diferencia entre el punto de la \'orbita de periodo $n$ encontrado y su n-\'esima iteraci\'on .
+\begin{equation}
+	E = ||(x_{0},y_{0})-M^{n}(x_{0},y_{0})||
+\end{equation}
+Mientras que en el caso de las parametrizaciones el error se toma de la diferencia entre composiciones evaluada en el intervalo en el que se tom\'o la parametrizaci\'on. 
+\begin{equation}
+	\mathbf{E} = || M\circ \mathcal{P}- \mathcal{P}\circ g||
+\end{equation}
+Los errores se analizan por separado ya que cada m\'etodo puede considerarse ajeno. 
+
+
+
+
+
+
