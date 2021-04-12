@@ -2,7 +2,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %           Capítulo 3: Mapeo de Hénon
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Ejemplos de aplicación del método}
+\chapter{Resultados}
 %\label{SeccionEstandar}\section{Mapeo estándar}
 
 Utilizando el método ya programado se hicieron diferentes cálculos para encontrar algunas \'orbitas peri\'odicas en el mapeo est\'andar, que se muestran en la figura \ref{orbitasperiodicasestandarv}. Todas las \'orbitas que aparecen fueron calculadas n\'umeros de tipo \textrm{Float64} y presentan un error menor al $1\times10^{-15}$.
@@ -69,7 +69,7 @@ Mientras que sus conjuntos invariantes asociados son
 \end{equation}
 Utilizando el m\'etodo implementado de la misma manera que se utiliz\'o para el mapeo est\'andar es posible obtener \'orbitas peri\'odicas de diferentes periodos usando semillas adecuadas. Un ejemplo de algunas \'orbitas se muestra en la figura \ref{grafmapeocuadratico1}. \\
 
-\begin{figure}
+\begin{figure}[H]
 	\includegraphics[scale=0.7]{MapeoCuadraDifP}
 	\label{grafmapeocuadratico1}
 	\caption{Espacio fase y algunas \'orbitas peri\'odicas del mapeo \eqref{mapeocuadratico} con $ a = 0.618, b=0.2$. Las curvas de color rojo y azul corresponden a los conjuntos $\mathbb{J}_{0}, \mathbb{J}_{1}$.} 
@@ -84,7 +84,7 @@ Es posible dentro del programa implementado cambiar el m\'etodo para encontrar l
 
 Algo interesante de analizar con est\'a herramienta es la din\'amica de las \'orbitas peri\'odicas con forme se mueven los par\'ametros. En el caso del mapeo \eqref{mapeocuadratico} se muestra en la figura  \ref{grafmapeocuadraper4variable} c\'omo la \'orbita de periodo 4 se va modificando al variar el par\'ametro $b$ y dejando fijo $a=0.618$.
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.7]{MapeoCuadraP5b}
 	\caption{Din\'amica de una \'orbita de periodo 4 del mapeo \eqref{mapeocuadratico} con valores $a=0.618$ fija y $b$ variable. Las curvas rojas y azules corresponden a los conjuntos invariantes $\mathbb{J}_{0}, \mathbb{J}_{1}$. }
@@ -110,15 +110,14 @@ En el caso del mapeo est\'andar es bien conocido que existe una \'orbita hiperb\
 	\caption{Errores asociados al c\'alculo de las variedades invariantes que aparecen en la figura \ref{estandarvariedadesperiodo2}.}
 	\label{erroresvariedadesestandarperiodo2}
 \end{figure}
-Variando el valor de $\kappa$ entre $0.1$ y $1.1$ y calculando las \'orbitas hiperb\'olicas de periodo dos y sus respectivas variedades se obtuvo la figura  \ref{variedadesestandarkappasv} donde se muestra como la \'orbita de periodo dos se va deformando as\'i como las variedades. De cada punto marcado en color verde surge una variedad estable (verde) y una variedad inestable (naranja), se puede notar como la variedad estable se convierte en la inestable del punto siguiente en la \'orbita. 
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.7]{variedadesestandarkappas}
-	\caption{Comportamiento de las variedades invariantes asociadas a la \'orbita de periodo dos en el mapeo est\'andar al variar $\kappa$ entre $[0.1,1.1]$.}
-	\label{variedadesestandarkappasv}
-\end{figure}
+Variando el valor de $\kappa$ entre $0.1$ y $1.1$ y calculando las \'orbitas hiperb\'olicas de periodo dos y sus respectivas variedades se obtuvo la figura  \ref{variedadesestandarkappasv} donde se muestra como la \'orbita de periodo dos se va deformando as\'i como las variedades. De cada punto marcado en color verde surge una variedad estable (verde) y una variedad inestable (naranja), se puede notar como la variedad estable se convierte en la inestable del punto siguiente en la \'orbita.\\
+
+En la tabla 1 se muestra el error asociado al c\'alculo de la \'orbita peri]'odica que se obtuvo mediante la ecuaci\'on  \eqref{errororbitasperiodicas}, mientras que en la figura \ref{erroresvariedadesestandarperiodo2} se muestra el error asociado al c\'aclulo de las variedades invariantes. Como se puede observar despu\'es el error crece r\'apidamente despu\'es de un valor del par\'ametro que depende de cada parametrizaci\'on. Por esa raz\'on las variedades que aparecen en la figura \ref{estandarvariedadesperiodo2} fueron calculadas en los intervalos donde el error es m\'inimo, es decir menor a  un orden $10^{-10}$. 
+
 \begin{center}
-\begin{tabular}{|c|c|}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|}
 		\hline
 		$\kappa$&  Error  \\
 		\hline
@@ -162,26 +161,58 @@ Variando el valor de $\kappa$ entre $0.1$ y $1.1$ y calculando las \'orbitas hip
 		\hline
 		$1.1$& $4.440892098500626e-16$  \\
 		\hline
-\end{tabular}
+	\end{tabular}
+\caption{Tabla con los errores asociados al c\'alculo de la \'orbita de periodo 2 en el mapeo est\'andar con diferentes valores de $\kappa$.}
+\end{table}
 \end{center}
-\begin{figure}
+
+
+En el caso del mapeo \eqref{mapeocuadratico} se aplic\'o el m\'etodo para dos \'orbitas encontradas, una de periodo 3 y una de periodo 11, tomando el valor de par\'ametro $a=0.618$  fijo y variando $b$. El error asociado a las \'robitas peri\'odicas est\'a en el mismo orden que en el caso del mapeo est\'andar, es decir menor a $10^{-10}$. Lo que podemos ver de las figuras 23423 es que cuando el par\'ametro $b$ es cercano a cero las variedades asociadas a las \'orbitas peri\'odicas resultan con menos curvaturas. Cuando el par\'ametro $b$ va aumentando las \'orbitas peri\'odicas se van acercando como se muestra en la figura 23534 en donde las \'orbitas son cercanas y sus variedades tambi\'en. Adem\'as de esto podemos obervar que las variedades se van curvando y teniendo un comportamiento m\'as complicado de describir. Cuando el valor de $b$ aumenta lo suficiente las \'orbitas est\'an lo suficientemente cerca como para que las variedades de la \'orbita de periodo tres y la de periodo once se corten en varios puntos como se puede ver en la figura 34534. \\
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{variedadesestandarkappas}
+	\caption{Comportamiento de las variedades invariantes asociadas a la \'orbita de periodo dos en el mapeo est\'andar al variar $\kappa$ entre $[0.1,1.1]$.}
+	\label{variedadesestandarkappasv}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{variedadesestperiodo3kvar}
+	\caption{Variedades asociadas a una \'orbita de periodo tres para el mapeo est\'andar con valores de $\kappa = [0.01,0.02,0.03]$. }
+	\label{vairedadesperiodo3kvariable}
+\end{figure}
+
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.7]{variedadesestandarperiodo3}
 	\caption{Variedades invariantes asociadas a una \'orbita de periodo 3 en el mapeo est\'andar con diferentes valores de $\kappa$.}
 	\label{variedadesestandarperiodo3}
 \end{figure}
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.7]{erroresvariedadesestandarperiodo3}
 	\caption{Errores asociados al c\'aculo de las variedades invariantes de la figura \ref{variedadesestandarperiodo3}. }
 	\label{erroresvariedadesperiodo3}
 \end{figure}
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.7]{variedadesestperiodo3kvar}
-	\caption{Variedades asociadas a una \'orbita de periodo tres para el mapeo est\'andar con valores de $\kappa = [0.01,0.02,0.03]$. }
-	\label{vairedadesperiodo3kvariable}
+
+\begin{figure}[H]
+	\includegraphics[scale=0.7]{variedadescuadraticop3p11A}
+	\caption{Variedades invariantes asociadas a dos \'orbitas de periodo tres y once respectivamente, para el mapeo \eqref{mapeocuadratico}, con diferentes valores del par\'ametro $b$ y manteniendo $a$ fijo.}
+	\label{variedadescuadraticoper3per11vark}
 \end{figure}
+\section{Conclusiones}
+Mediante el m\'etodo descrito para encontrar \'orbitas peri\'odicas es posible encontrar \'orbitas de periodo $N$ en mapeos simpl\'ecticos de dos dimensiones usando una semilla adecuada. Dado que el m\'etodo usa internamente un m\'etodo para encontrar ra\'ices en una dimensi\'on es importante tener en cuenta que se cumplan los requerimentos para que el m\'etodo converga. Las instrucciones de c\'omo puede modificarse el m\'etodo o la presici\'on con la que se calculan las \'orbitas puede encontrarse en PONER URL al git. \\
+
+Se present\'o adem\'as un m\'etodo para determinar la estabilidad de las \'orbitas encontradas. Este m\'etodo proviene de usar la regla de la cadena en la composici\'on del mapeo con el que se est\'e trabajando y del hecho de que cualqui\'er \'orbita de periodo $N$ es un punto fijo del mapeo $M^{N}$. Usando esto y la forma en la que se determina la estabilidad de un punto fijo se construy\'o el m\'etodo para determinar la estabilidad.\\
+
+Para las \'orbitas peri\'odicas hiperb\'olicas se aplic\'o el m\'etodo de la parametrizaci\'on para describir las variedades asociadas a la \'orbita. El m\'etodo ya hab\'ia sido implementado previamente para puntos fijos hiperb\'olicos de mapeos de dos dimensiones por lo que solo fueron necesarios algunas modificaciones simples para usarlo en \'orbitas peri\'odicas. Mediante este m\'etodo fue posible describir el comportamiendo de variedades asociadas a \'orbitas per\'iodicas en cada uno de los puntos de la \'orbita.\\
+
+El orden de la parametrizaci\'on se puede elegir y modificar para que la variedad se pueda describir con un error aceptable en alg\'un intervalo deseado. Sin embargo no es posible con solo aumentar el orden del polinomio describir una variedad en intervalos \textit{grandes} (el tamaño depende del mapeo y de la \'orbita peri\'odica), por lo que una alternativa es usar aplicar el mapeo a la parametrizaci\'on, como una especie de iteraci\'on pero no de puntos en el espacio fase, sino directamente de la expresi\'on polin\'omica de la variedad. La iteraci\'on de la variedad nos da un nuevo polinomio con diferentes coeficientes que pueden describir un intervalo mayor de la variedad. \\
+
+Uniendo los m\'etodos fue posible observar la din\'amica de las \'orbitas peri\'odicas y de las variedades asociadas cuando el par\'ametro $\kappa$ en el mapeo est\'andar, o el par\'ametro $b$ en el mapeo \eqref{mapeocuadratico} van increment\'andose. 
+
 
 
 

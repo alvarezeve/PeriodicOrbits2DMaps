@@ -3,14 +3,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Teor\'ia}
-Consideremos un mapeo $M$ que preserva \'area, tal que $M:\mathbb{S} \times \mathbb{R} \longrightarrow \mathbb{S}\times\mathbb{R}$. El mapeo $M$ lleva puntos $v_{i}= (x_{i},y_{i})$ en puntos dados por $M(v_{i})=v_{i+1}$, donde el \'indice denota que se trata de la i-\'esima iteraci\'on. \\
+Consideremos un mapeo $M$ que preserva \'area, donde $M:\mathbb{S} \times \mathbb{R} \longrightarrow \mathbb{S}\times\mathbb{R}$. El mapeo $M$ lleva puntos $v_{i}= (x_{i},y_{i})$ en puntos dados por $M(v_{i})=v_{i+1}$, donde el sub\'indice denota que se trata de la i-\'esima iteraci\'on. \\
 
 Nos interesa centrarnos en los mapeos que violan la condici\'on de no degeneraci\'on tambi\'en llamada \textit{condici\'on twist} que dice que 
 \begin{eqnarray}
-\frac{\partial x_{i+1}}{\partial y_{i}} \neq 0
+\frac{\partial x_{i+1}}{\partial y_{i}} \neq 0.
 \label{twist condition}
 \end{eqnarray}
-Un mapeo puede violar la condici\'on \ref{twist condition} de diferentes maneras, en especial si para alg\'un valor particular de $y$ ocurre que $\partial x_{i+1}/\partial y_{i} = 0$. La violaci\'on de la condici\'on \ref{twist condition} da lugar a bifurcaciones las cuales a su vez son indicadoras de una colisi\'on de \'orbitas peri\'odica en el mapeo. El valor del par\'ametro para el cual ocurre la colisi\'on es de importancia en teor\'ia KAM. 
+Un mapeo puede violar la condici\'on \ref{twist condition} de diferentes maneras, en especial si para alg\'un valor particular de $y_{i}$ ocurre que $\partial x_{i+1}/\partial y_{i} = 0$. La violaci\'on de la condici\'on \ref{twist condition} da lugar a bifurcaciones de los c\'irculos invariantes, las cuales a su vez son indicadoras de una colisi\'on de \'orbitas peri\'odicas en el mapeo. El valor del par\'ametro para el cual ocurre la colisi\'on es de importancia en teor\'ia KAM. 
 
 \section{Un m\'etodo para encontrar \'orbitas peri\'odicas de mapeos de 2D.}
 
@@ -23,7 +23,7 @@ TM = MT,
 \end{eqnarray}
 esta carater\'istica nos ayudar\'a a redefinir una \'orbita peri\'odica del mapeo. Por otro lado decimos que una transformaci\'on $I$ se dice de \textit{tiempo inverso} para $M$ si 
 \begin{eqnarray}
-I_{0}M^{-1} = MI_{0}
+I_{0}M^{-1} = MI_{0}.
 \label{involucion1}
 \end{eqnarray}
 Es decir si la simetr\'ia cambia el sentido del mapeo hac\'ia atr\'as. Si adem\'as la simetr\'ia de tiempo inverso es una involuci\'on ($I_{0}^{2}=1$) se puede construir una nueva involuci\'on a partir de la anterior mediante 
@@ -31,17 +31,18 @@ Es decir si la simetr\'ia cambia el sentido del mapeo hac\'ia atr\'as. Si adem\'
 I_{1} = MI_{0}.
 \label{involucion2}
 \end{equation}
-Es simple comprobar que $I_{1}$ es involuci\'on pues usando la definici\'on \ref{involucion1} tenemos que 
+Es simple comprobar que $I_{1}$ es involuci\'on, usando la definici\'on \ref{involucion1} tenemos que 
 \begin{equation*}
-I_{1}^{-1}MI_{1} = (MI_{0})^{-1}MI_{1} = I_{0}^{-1}M^{-1}MI_{1} = I_{0}^{-1}I_{1} = I^{-1}_{0}MI_{0}=M^{-1}
+I_{1}^{-1}MI_{1} = (MI_{0})^{-1}MI_{1} = I_{0}^{-1}M^{-1}MI_{1} = I_{0}^{-1}I_{1} = I^{-1}_{0}MI_{0}=M^{-1},
 \end{equation*}
-reacomodando t\'erminos $I_{0}M^{-1}= MI_{0}$.
+y reacomodando t\'erminos obtenemos $I_{0}M^{-1}= MI_{0}$.\\
+
  
-Con las involuciones definidas arriba podemos escribir el mapeo $M$ como factorizaci\'on de las mismas.
+Con las involuciones definidas arriba podemos escribir el mapeo $M$ como factorizaci\'on de las mismas
 \begin{eqnarray}
-M = I_{1}I_{0}
+M = I_{1}I_{0}.
 \end{eqnarray}
-decimos entonces que el mapeo $M$ es reversible. Usando estos conceptos vamos a analizar la siguiente afirmaci\'on. \\
+Decimos entonces que el mapeo $M$ es reversible. Usando estos conceptos vamos a analizar la siguiente afirmaci\'on. \\
 
 \begin{thm}
 Sea $M:\mathbb{S} \times \mathbb{R} \longrightarrow \mathbb{S}\times\mathbb{R}$ un mapeo simpl\'ectico no-twist reversible. Sean 
@@ -58,11 +59,11 @@ Queremos probar que $M^{2N}v_{0}=v_{0}$. Entonces
 \begin{align*}
 	M^{2N}v_{0} &= M^{N}M^{N}v_{0}\\
 				&= M^{N-1}MM^{N-1}Mv_{0}\\
-				&= M^{N-1}MM^{N-1}I_{1}I_{0}v_{0}
+				&= M^{N-1}MM^{N-1}I_{1}I_{0}v_{0},
 \end{align*}
 usando que $v_{0}\in I_{0}$ y que $M$ es reversible
 \begin{align*}
-	M^{2N}v_{0} &= M^{N-1}I_{1}I_{0}M^{N-1}I_{1}v_{0}
+	M^{2N}v_{0} &= M^{N-1}I_{1}I_{0}M^{N-1}I_{1}v_{0},
 \end{align*}
 usando que $M^{N}v_{0}=v_{N}\in \mathbb{J}_{0}$ y que $M^{N-1}=M^{N}M^{-1}$
 \begin{align*}
@@ -157,7 +158,7 @@ Con los teoremas 1 y 2 podemos enunciar el siguiente resultado.
 			\item Si $v_{0}\in \mathbb{J}_{0}$ y $M^{N}v_{0}\in \mathbb{J}_{1}$ si y s\'olo si $v_{0}$ pertenece a una \'orbita de periodo $2N-1$ de $M$.
 		\end{itemize}
 \end{corola}
-Si se conocen los conjuntos $\mathbb{J}_{0}, \mathbb{J}_{1}$ entonces la b\'usqueda de \'orbitas peri\'odicas se puede reducir a un b\'usqueda en una dimensi\'on ya que sabemos que al menos un punto de la \'orbita estar\'an en alguno de los conjuntos.
+Si se conocen los conjuntos $\mathbb{J}_{0}, \mathbb{J}_{1}$ entonces la b\'usqueda de \'orbitas peri\'odicas se puede reducir a un b\'usqueda en una dimensi\'on, ya que sabemos que al menos un punto de la \'orbita estar\'an en alguno de los conjuntos.
 
 
 
@@ -211,18 +212,18 @@ Una forma gr\'afica de ver lo que nos dice la ecuaci\'on \ref{Ecua de invarianci
 	\label{diagrama-conmutativo}
 \end{figure}
 
-Las variables a encontrar en la ecuaci\'on \ref{Ecua de invariancia} son $\mathcal{P}$ y $g$, por lo que se necesita al menos fijar o encontrar una de ellas para poder resolver la ecuaci\'on. Para hacer esto se suelen tomar en cuanta dos formas de parametrizaci\'on definidas como \textit{la forma gr\'afica} y \textit{la forma normal}. En este caso se usa la forma gr\'afica que consiste en usar la forma local de las variedades al rededor del punto $v_{*}$. Es decir se usa que localmente la dependencia es lineal, por lo que 
+Las variables a encontrar en la ecuaci\'on \ref{Ecua de invariancia} son $\mathcal{P}$ y $g$, por lo que se necesita al menos fijar o encontrar una de ellas para poder resolver la ecuaci\'on. Para hacer esto se suelen tomar en cuenta dos formas de parametrizaci\'on definidas como \textit{la forma gr\'afica} y \textit{la forma normal}. En este caso se usa la forma gr\'afica que consiste en usar la forma local de las variedades al rededor del punto $v_{*}$. Es decir se usa que localmente la dependencia es lineal, por lo que 
 \begin{equation}
-g(t) = \lambda t
+g(t) = \lambda t,
 \label{funciong1}
 \end{equation}
 con $t\in \mathbb{R}$ el par\'ametro, $\lambda\in \mathbb{R}$ el valor propio asociado a la linearizaci\'on del mapeo. Esta desici\'on esta apoyada en el teorema de Hartman-Grobman que declara que en una vecindad del punto fijo hiperb\'olico se puede aproximar el comportamiento del sistema mediante su linearizaci\'on. \\
 
-Entonces usando la linealzaci\'on del mapeo y la ecuaci\'on \eqref{funciong1} se puede resolver la ecuaci\'on \eqref{Ecua de invariancia} para $\mathcal{P}$. Para ello se propone que 
+Entonces usando la linearizaci\'on del mapeo y la ecuaci\'on \eqref{funciong1} se puede resolver la ecuaci\'on \eqref{Ecua de invariancia} para $\mathcal{P}$. Para ello se propone que 
 \begin{equation}
 \mathcal{P} := (p_{1}(t), p_{2}(t)) =( \sum_{n=0}^{\infty}a_{n}t^{n}, \sum_{n=0}^{\infty}b_{n}t^{n}).
 \label{polinomioecuacion}
 \end{equation}
-Sustituyendo la ecuaci\'on \eqref{polinomioecuacion} en la ecuaci\'on \eqref{Ecua de invariancia} se puede separar por grado de cada lado de la ecuaci\'on y comparar t\'erminos, las ecuaciones resultantes son recursivas , es decir que proponiendo los coeficientes de orden cero del polinomio $\mathcal{P}$ se puede obterner todos los consecutivos. 
+Sustituyendo la ecuaci\'on \eqref{polinomioecuacion} en la ecuaci\'on \eqref{Ecua de invariancia} se puede separar por grado de cada lado de la ecuaci\'on y comparar t\'erminos.  Las ecuaciones resultantes son recursivas , es decir que proponiendo los coeficientes de orden cero del polinomio $\mathcal{P}$ se puede obtener todos los consecutivos. 
 
 

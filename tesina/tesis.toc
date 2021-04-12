@@ -7,6 +7,7 @@
 \contentsline {chapter}{\numberline {2}Implementaci\'on del m\'etodo}{9}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Desarrollo explícito para el mapeo estándar}{9}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Implementación del método}{11}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Ejemplos de aplicación del método}{15}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Resultados}{15}{chapter.3}%
 \contentsline {section}{\numberline {3.1}\'Orbitas peri\'odicas hiperb\'olicas y sus variedades.}{19}{section.3.1}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{27}{chapter*.16}%
+\contentsline {section}{\numberline {3.2}Conclusiones}{27}{section.3.2}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{29}{chapter*.18}%
