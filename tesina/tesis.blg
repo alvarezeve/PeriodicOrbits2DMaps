@@ -10,61 +10,46 @@ The style file: unsrt.bst
 Database file #1: referencias.bib
 Warning--entry type for "Mireles2" isn't style-file defined
 --line 21 of file referencias.bib
-"{" immediately follows a field name---line 285 of file referencias.bib
- :  year
- :      {2010}
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 302 of file referencias.bib
- :  
- :  author = {Lang Serge}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Too many commas in name 1 of "Á. Haro, M. Canadell, J. Figueras,A. Luque y J. Mondelo" for entry Haro
-while executing---line 944 of file unsrt.bst
-Warning--empty year in Friedberg
-Warning--empty year in Numerics
-Warning--empty author and editor in lang
-Warning--empty publisher in lang
-Warning--empty year in lang
-You've used 34 entries,
+Warning--empty year in Olvera
+You've used 32 entries,
             1791 wiz_defined-function locations,
-            637 strings with 7676 characters,
-and the built_in function-call counts, 5323 in all, are:
-= -- 472
-> -- 121
+            640 strings with 7719 characters,
+and the built_in function-call counts, 5590 in all, are:
+= -- 484
+> -- 209
 < -- 5
-+ -- 63
-- -- 29
-* -- 223
-:= -- 803
-add.period$ -- 99
-call.type$ -- 34
-change.case$ -- 27
++ -- 86
+- -- 54
+* -- 287
+:= -- 868
+add.period$ -- 95
+call.type$ -- 32
+change.case$ -- 28
 chr.to.int$ -- 0
-cite$ -- 39
-duplicate$ -- 303
-empty$ -- 666
-format.name$ -- 29
-if$ -- 1258
+cite$ -- 33
+duplicate$ -- 280
+empty$ -- 637
+format.name$ -- 54
+if$ -- 1302
 int.to.chr$ -- 0
-int.to.str$ -- 34
-missing$ -- 46
-newline$ -- 168
-num.names$ -- 29
-pop$ -- 172
+int.to.str$ -- 32
+missing$ -- 41
+newline$ -- 160
+num.names$ -- 28
+pop$ -- 144
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 94
+skip$ -- 97
 stack$ -- 0
-substring$ -- 132
-swap$ -- 44
+substring$ -- 177
+swap$ -- 42
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 5
-while$ -- 35
-width$ -- 36
-write$ -- 351
-(There were 3 error messages)
+warning$ -- 1
+while$ -- 36
+width$ -- 34
+write$ -- 338
+(There were 2 warnings)

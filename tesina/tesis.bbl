@@ -1,13 +1,13 @@
 \begin{thebibliography}{10}
 
 \bibitem{Haro}
-J.~Figueras A. Luque y J.~Mondelo Á.~Haro, M.~Canadell.
+Á. Haro, M.~Canadell, J.~Figueras, and A.~Luque y~J.~Mondelo.
 \newblock {\em The Parameterization Method for Invariant Manifolds}, volume 195
   of {\em Applied Mathematical Sciences}.
 \newblock Springer, 1 edition, 2010.
 
 \bibitem{eve}
-Evelyn Alvarez.
+E.~Alvarez.
 \newblock {\em Metodo de parametrización: Variedades estables e inestables en
   mapeos Hamiltonianos de dos dimensiones.}
 \newblock Universidad Nacional Aut\'onoma de M\'exico, 2019.
@@ -20,14 +20,14 @@ J.D~Mireles James.
   2007.
 
 \bibitem{Mireles2}
-J.D. Mireles James y Christian~Reinhardt Jan Bouwe van~den Berg.
+Jan~Bouwe van~den Berg, J.D.~Mireles James, and Christian Reinhardt.
 \newblock Computing (un)stable manifolds with validated error bounds:
   non-resonant and resonant spectra.
 \newblock
   \url{http://cosweb1.fau.edu/~jmirelesjames/parametrization_draft9.pdf}, 2015.
 
 \bibitem{Meyer}
-Glen R. Hall y Dan~Offin Kenneth R.~Meyerb.
+Kenneth~R. Meyer, Glen~R. Hall, and Dan Offin.
 \newblock {\em Introduction to Hamiltonian Dynamical Systems and the N-Body
   Poblem}, volume~90 of {\em Applied Mathematical Sciences}.
 \newblock Springer, 2nd edition, 2009.
@@ -45,42 +45,52 @@ James~D. Meiss.
 \newblock Society for Industrial and Applied Mathematics ,Philadelphia, 1
   edition, 2007.
 
-\bibitem{Chang}
-Y.F.~Chang y~G.~Corliss.
-\newblock Ratio-like and recurrence relation tests for convergence of series.
-\newblock {\em J. Inst. Maths Applies}, 25:349--359, 1980.
-
-\bibitem{Merlo}
-O.~Merlo y T.H.~Seligman C.~Jung, C. Mejía-Monasterio.
-\newblock Self-pushing effect in chaotic scattering.
-\newblock {\em New Journal of Physics}, 6, 2004.
-
 \bibitem{Juergen}
 Juergen Quandt.
 \newblock On the {H}artman--{G}robman theorem for maps.
 \newblock {\em Journal of Differential Equations}, 64:154--164, 1986.
 
+\bibitem{GreeneA}
+J.~M. Greene.
+\newblock A method for determining a stochastic transition.
+\newblock {\em Journal of Mathematical Physics}, 20:1183--1201, 1979.
+
+\bibitem{Olvera}
+A.~Olvera and C.~Sim\'o.
+\newblock An obstruction method for the destruction of invariant curves.
+\newblock {\em Physica D}, 20:181--192.
+
+\bibitem{Cabre}
+X.~Cabr\'e, E.~Fontich, and R.~De la~LLave.
+\newblock The parametrization method for invariant manifolds iii: overview and
+  applications.
+\newblock {\em Journal of differential equations}, 218:444--515, 2005.
+
+\bibitem{CarlesSimo}
+C.~Sim\'o.
+\newblock Some questions looking for answers in dynamical systems.
+\newblock {\em Discrete and continuous dynamical systems}, 38:6215--6239, 2018.
+
+\bibitem{Berretti}
+A.~Berretti and G.~Gentile.
+\newblock Periodic and quasi-periodic orbits for the standard map.
+\newblock {\em Commun. Math. Phys.}, 231:135--156, 2002.
+
+\bibitem{Renato}
+R.~Calleja, D.~del Castillo-Negrete, D.~Martinez del Rio, and A.~Olvera.
+\newblock A new method to compute periodic orbits in general symplectic maps.
+\newblock {\em ResearchGate}, 38, 2020.
+
+\bibitem{Negrete}
+D.~del Castillo-Negrete, J.M. Greene, and P.J. Morrison.
+\newblock Area preserving nontwist maps: periodic orbits and transition to
+  chaos.
+\newblock {\em Physica D}, 91:1--23, 1996.
+
 \bibitem{Tomoki}
-Anthony M. Bloch y Melvin~Leok Tomoki~Ohsawa.
+T.~Ohsawa, A.~M. Bloch, and M.~Leok.
 \newblock Discrete {H}amilton-{J}acobi theory.
 \newblock {\em SIAM J. Control Optim}, 49:1822--1856, 3009.
-
-\bibitem{Jung}
-B.~Rückerl y~C.~Jung.
-\newblock Scaling properties of a scattering system with an incomplete
-  horseshoe.
-\newblock {\em J. Phys A: Math.}, 27:55--77, 1994.
-
-\bibitem{Jung2}
-B.~Rückerl y~C.~Jung.
-\newblock Hierarchical structure in the chaotic scattering off a magnetic
-  dipole.
-\newblock {\em J. Phys A: Math.}, 27:6741--6758, 1994.
-
-\bibitem{Seligman}
-C.~Lipp y T.H.~Seligman C.~Jung.
-\newblock The inverse scattering problem for chaotic hamiltonian systems.
-\newblock {\em Annals of Physics}, 275:151--189, 1999.
 
 \bibitem{Ott}
 Edward Ott.
@@ -88,7 +98,7 @@ Edward Ott.
 \newblock Cambridge University Press, 5th edition, 1993.
 
 \bibitem{gold}
-Charles P. Poole y John L.~Safko Herbert~Goldstein.
+Herbert Goldstein, Charles~P. Poole, and John~L. Safko.
 \newblock {\em Classical {M}echanics}.
 \newblock Addison-Wesley, 3 edition, 2000.
 
@@ -99,7 +109,7 @@ Vladimir~I. Arnol'd.
 \newblock Springer-Verlag, 2nd edition, 1992.
 
 \bibitem{arn}
-Vladimir I.~Arnol'd y~Roger~Cooke.
+Vladimir~I. Arnol'd and Roger Cooke.
 \newblock {\em Ordinary Differential Equations}.
 \newblock Springer-Verlag, 1991.
 
@@ -119,27 +129,14 @@ Robert~L. Devaney.
 \newblock Adyson-Wesley, 2nd edition, 1989.
 
 \bibitem{devaney2}
-Robert L. Devaney y Glen R.~Hall Paul~Banchard.
+Paul Banchard, Robert~L. Devaney, and Glen~R. Hall.
 \newblock {\em Ecuaciones diferenciales}.
 \newblock Thomson, 1th edition, 1998.
 
 \bibitem{marion}
-Stephen T.~Thornton y~Jerry B.~Marion.
+Stephen~T. Thornton and Jerry~B. Marion.
 \newblock {\em Classical Dynamics of Particles and Systems}.
 \newblock Thomson, 5th edition, 2004.
-
-\bibitem{ramon}
-R.Baker Kearfott y Michael J.~Cloud Ramon E.~More.
-\newblock {\em Introduction to Interval Analysis}.
-\newblock SIAM, 2009.
-
-\bibitem{interval}
-Interval {A}rithmetic (paquete de julia).
-\newblock \url{https://juliaintervals.github.io/IntervalArithmetic.jl/stable/}.
-
-\bibitem{validated}
-Validated {N}umerics (paquete de julia).
-\newblock \url{https://github.com/JuliaIntervals/ValidatedNumerics.jl}.
 
 \bibitem{static}
 Static {A}rrays (paquete de julia).
@@ -150,10 +147,13 @@ Static {A}rrays (paquete de julia).
 Interval {R}oot {F}inding (paquete de julia).
 \newblock \url{https://github.com/JuliaIntervals/IntervalRootFinding.jl}.
 
-\bibitem{Friedberg}
-A.~J. Insel y L.E.~Spence Stephen H.~Friedberg.
-\newblock {\em Algebra lineal}.
-\newblock Publicaciones Cultrales S.A., 1 edition.
+\bibitem{TaylorSeries}
+Taylor {S}eries (paquete de julia).
+\newblock \url{https://github.com/JuliaDiff/TaylorSeries.jl}.
+
+\bibitem{JuliaDiff}
+Julia {D}iff (paquete de julia).
+\newblock \url{https://github.com/JuliaDiff}.
 
 \bibitem{Mateo}
 Mateo Wirth.
@@ -163,25 +163,16 @@ Mateo Wirth.
   \url{http://pi.math.cornell.edu/~templier/junior/final_paper/Mateo_Wirth.pdf}.
 
 \bibitem{book:Calvin}
-Calvin D.~Ahlbrandt y~Allan C. Peterson~(auth.).
+Calvin~D. Ahlbrandt and Allan C.~Peterson (auth.).
 \newblock {\em Discrete Hamiltonian Systems: Difference Equations, Continued
   Fractions, and Riccati Equations}.
 \newblock Kluwer Texts in the Mathematical Sciences 16. Springer US, 1 edition,
   1996.
 
-\bibitem{Numerics}
-W.~Tucker.
-\newblock {\em Valdated Numerics: A short introduction to Rigorous
-  Computations}.
-\newblock Princeton University Press.
-
 \bibitem{Ying}
-Tamás~Tél Ying-Cheng~Lai.
+Ying-Cheng Lai and Tamás Tél.
 \newblock {\em Transient Chaos}, volume 173 of {\em Applied Mathematical
   Sciences}.
 \newblock Springer, 1 edition, 2010.
-
-\bibitem{lang}
-{\em Complex Analysis}.
 
 \end{thebibliography}

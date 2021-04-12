@@ -174,7 +174,7 @@ En la liga se encuentra la documentaci\'on necesaria para poder usar el m\'etodo
 	\> la composición del mapeo $M$, $k$ veces.\>  $f(v)=M^{k}(v)$ \\
 	\>............................................................  \>..................................................\\
 	\>\textbf{3.} Se toma un punto en el conjunto  \> $J_{A}$\\
-	\> invariante \> \\
+	\> invariante. \> \\
 	\>............................................................  \>..................................................\\
 	\>\textbf{4.} Se usa la función creada en el paso 2. \> \\
 	\> y se aplica al punto elegido en el paso \> $f(p)$\\
@@ -192,7 +192,7 @@ En la liga se encuentra la documentaci\'on necesaria para poder usar el m\'etodo
 	\end{tabbing} 
 \end{center}
 
-La implementaci\'on del m\'etodo de parametrizaci\'on fue resultado de un trabajo anterior \cite{eve}, por lo que solo se decribir\'a de manera muy superficial lo programado. Al igual que en el caso del m\'etodo para las \'orbitas peri\'odicas se puede encontrar la documentaci\'on en \url{https://github.com/alvarezeve/Tesis-Variedades-Estables-e-inestables/}. 
+La implementaci\'on del m\'etodo de parametrizaci\'on fue resultado de un trabajo anterior \cite{eve}, por lo que solo se decribir\'a de manera muy superficial lo programado. Al igual que en el caso del m\'etodo para las \'orbitas peri\'odicas se puede encontrar la documentaci\'on en PONER URL \url{https://github.com/alvarezeve/Tesis-Variedades-Estables-e-inestables/}. 
 
 \begin{center}
 	\textcolor{blue}{\textbf{Pasos}}
@@ -200,21 +200,22 @@ La implementaci\'on del m\'etodo de parametrizaci\'on fue resultado de un trabaj
 		12\=1234567890123456789012345678901234567890123456\=12345678901234567890123456\kill%
 		\>............................................................  \>..................................................\\
 		\>\textbf{1.} Se reciben el mapeo, el punto fijo  \> \\
-		\> el orden del polinomio, el intervalo en el que \> $M, O, pf, t, \Delta t$\\
-		\> se va a evaluar y el paso.\> \\
+		\> el orden del polinomio, el intervalo en  \> $M, O, v, t, \Delta t$\\
+		\> el que se va a evaluar y el paso.\> \\
 		\>............................................................  \>..................................................\\
 		\>\textbf{2.} Se crean dos polinomios de grado 1  \> $P_{x} = a_{0}+a_{1}t+O(t^{2})$\\
 		\> asociados a las variables del mapeo. \>  $P_{y} = b_{0} +b_{1}t+O(t^{2})$ \\
 		\>............................................................  \>..................................................\\
 		\>\textbf{3.} Se aplica el mapeo a los polinomios.  \> $M(P_{x}+P_{y})$\\
 		\>............................................................  \>..................................................\\
-		\>\textbf{4.} Se calcula la matriz jacobiana del sistema \> \\
-		\>anterior y se calculan los valores y vectores propios.\> $JM(P_{x},P_{y})$\\
+		\>\textbf{4.} Se calcula la matriz jacobiana del  \> \\
+		\>sistema anterior y se calculan los valores \> $JM(P_{x},P_{y})$\\
+		\> y vectores propios.\\
 		\>............................................................  \>..................................................\\
 		\>\textbf{5.} Se elige el valor propio asociado a la  \> \\
 		\>variedad que se está calculando \> $\lambda$\\
 		\>............................................................  \>..................................................\\
-		\>\textbf{6.}Se resuelve para $a_{1},b_{1}$\\
+		\>\textbf{6.}Se resuelve para $a_{1},b_{1}$.\> $a_{1}(a_{0}, \lambda), b_{1}(b_{0},\lambda)$\\
 		\> \> \\
 		\>............................................................  \>..................................................\\
 		\> \textbf{7. }Se sustituyen los valores de $a_{1},b_{1}$ \> $P_{x} = a_{0}+a_{1}t+a_{2}t^{2}+O(t^{3})$\\
@@ -246,7 +247,7 @@ La implementaci\'on del m\'etodo de parametrizaci\'on fue resultado de un trabaj
 
 En ambas implementaciones se añadi\'o una forma de evaluar el error num\'erico. Para las \'orbitas peri\'odicas se tom\'o la diferencia entre el punto de la \'orbita de periodo $n$ encontrado y su n-\'esima iteraci\'on .
 \begin{equation}
-	E = ||(x_{0},y_{0})-M^{n}(x_{0},y_{0})||
+	\mathbb{E} = ||(x_{0},y_{0})-M^{n}(x_{0},y_{0})||
 	\label{errororbitasperiodicas}
 \end{equation}
 Mientras que en el caso de las parametrizaciones el error se toma de la diferencia entre composiciones evaluada en el intervalo en el que se tom\'o la parametrizaci\'on. 
