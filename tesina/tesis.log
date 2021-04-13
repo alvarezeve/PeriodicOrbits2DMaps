@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.3.14)  12 APR 2021 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.3.14)  12 APR 2021 19:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1374,8 +1374,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--165
 LaTeX Info: Redefining \. on input line 170.
 LaTeX Info: Redefining \% on input line 170.
 [11]
-LaTeX Info: Redefining \. on input line 213.
-LaTeX Info: Redefining \% on input line 213.
+LaTeX Info: Redefining \. on input line 214.
+LaTeX Info: Redefining \% on input line 214.
  [12])
 LaTeX Info: Redefining \. on input line 122.
 LaTeX Info: Redefining \% on input line 122.
@@ -1388,12 +1388,12 @@ LaTeX Info: Redefining \% on input line 122.
 
 ]
 Cap\'{\i }tulo 3.
-<EstandarOP07.pdf, id=300, 462.52798pt x 346.89601pt>
+<EstandarOP07.pdf, id=299, 462.52798pt x 346.89601pt>
 File: EstandarOP07.pdf Graphic file (type pdf)
 <use EstandarOP07.pdf>
 Package pdftex.def Info: EstandarOP07.pdf  used on input line 11.
 (pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
-<EstandarOP1-40.pdf, id=301, 462.52798pt x 346.89601pt>
+<EstandarOP1-40.pdf, id=300, 462.52798pt x 346.89601pt>
 File: EstandarOP1-40.pdf Graphic file (type pdf)
 <use EstandarOP1-40.pdf>
 Package pdftex.def Info: EstandarOP1-40.pdf  used on input line 17.
@@ -1408,7 +1408,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--71
 
  []
 
-<MapeoCuadraDifP.pdf, id=1208, 462.52798pt x 346.89601pt>
+<MapeoCuadraDifP.pdf, id=1207, 462.52798pt x 346.89601pt>
 File: MapeoCuadraDifP.pdf Graphic file (type pdf)
 <use MapeoCuadraDifP.pdf>
 Package pdftex.def Info: MapeoCuadraDifP.pdf  used on input line 73.
@@ -1416,7 +1416,7 @@ Package pdftex.def Info: MapeoCuadraDifP.pdf  used on input line 73.
 LaTeX Info: Redefining \. on input line 76.
 LaTeX Info: Redefining \% on input line 76.
 [16 <./EstandarOP1-40.pdf>]
-<MApeoCP4A.pdf, id=2101, 462.52798pt x 346.89601pt>
+<MApeoCP4A.pdf, id=2100, 462.52798pt x 346.89601pt>
 File: MApeoCP4A.pdf Graphic file (type pdf)
 <use MApeoCP4A.pdf>
 Package pdftex.def Info: MApeoCP4A.pdf  used on input line 79.
@@ -1426,7 +1426,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
-<MapeoCuadraP5b.pdf, id=2106, 462.52798pt x 346.89601pt>
+<MapeoCuadraP5b.pdf, id=2105, 462.52798pt x 346.89601pt>
 File: MapeoCuadraP5b.pdf Graphic file (type pdf)
 <use MapeoCuadraP5b.pdf>
 Package pdftex.def Info: MapeoCuadraP5b.pdf  used on input line 89.
@@ -1447,7 +1447,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
-<variedadesestandarperiodo2.pdf, id=3922, 722.7pt x 722.7pt>
+<variedadesestandarperiodo2.pdf, id=3921, 722.7pt x 722.7pt>
 File: variedadesestandarperiodo2.pdf Graphic file (type pdf)
 <use variedadesestandarperiodo2.pdf>
 Package pdftex.def Info: variedadesestandarperiodo2.pdf  used on input line 103
@@ -1458,7 +1458,7 @@ Overfull \hbox (21.05838pt too wide) in paragraph at lines 103--104
  [][] 
  []
 
-<erroresvariedadesestandarperiodo2.pdf, id=3923, 722.7pt x 722.7pt>
+<erroresvariedadesestandarperiodo2.pdf, id=3922, 722.7pt x 722.7pt>
 File: erroresvariedadesestandarperiodo2.pdf Graphic file (type pdf)
 <use erroresvariedadesestandarperiodo2.pdf>
 Package pdftex.def Info: erroresvariedadesestandarperiodo2.pdf  used on input l
@@ -1490,18 +1490,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--172
 LaTeX Info: Redefining \. on input line 172.
 LaTeX Info: Redefining \% on input line 172.
 [22]
-<variedadesestandarkappas.pdf, id=5793, 462.52798pt x 346.89601pt>
+<variedadesestandarkappas.pdf, id=5792, 462.52798pt x 346.89601pt>
 File: variedadesestandarkappas.pdf Graphic file (type pdf)
 <use variedadesestandarkappas.pdf>
 Package pdftex.def Info: variedadesestandarkappas.pdf  used on input line 176.
 (pdftex.def)             Requested size: 231.26341pt x 173.44757pt.
-<variedadesestperiodo3kvar.pdf, id=5794, 462.52798pt x 346.89601pt>
+<variedadesestperiodo3kvar.pdf, id=5793, 462.52798pt x 346.89601pt>
 File: variedadesestperiodo3kvar.pdf Graphic file (type pdf)
 <use variedadesestperiodo3kvar.pdf>
 Package pdftex.def Info: variedadesestperiodo3kvar.pdf  used on input line 183.
 
 (pdftex.def)             Requested size: 231.26341pt x 173.44757pt.
-<variedadesestandarperiodo3.pdf, id=5795, 722.7pt x 722.7pt>
+<variedadesestandarperiodo3.pdf, id=5794, 722.7pt x 722.7pt>
 File: variedadesestandarperiodo3.pdf Graphic file (type pdf)
 <use variedadesestandarperiodo3.pdf>
 Package pdftex.def Info: variedadesestandarperiodo3.pdf  used on input line 190
@@ -1512,7 +1512,7 @@ Overfull \hbox (93.3216pt too wide) in paragraph at lines 190--191
  [][] 
  []
 
-<erroresvariedadesestandarperiodo3.pdf, id=5796, 722.7pt x 722.7pt>
+<erroresvariedadesestandarperiodo3.pdf, id=5795, 722.7pt x 722.7pt>
 File: erroresvariedadesestandarperiodo3.pdf Graphic file (type pdf)
 <use erroresvariedadesestandarperiodo3.pdf>
 Package pdftex.def Info: erroresvariedadesestandarperiodo3.pdf  used on input l
@@ -1534,7 +1534,7 @@ le page
 LaTeX Info: Redefining \. on input line 200.
 LaTeX Info: Redefining \% on input line 200.
  [24 <./variedadesestandarperiodo3.pdf>]
-<variedadescuadraticop3p11A.pdf, id=9468, 722.7pt x 722.7pt>
+<variedadescuadraticop3p11A.pdf, id=9467, 722.7pt x 722.7pt>
 File: variedadescuadraticop3p11A.pdf Graphic file (type pdf)
 <use variedadescuadraticop3p11A.pdf>
 Package pdftex.def Info: variedadescuadraticop3p11A.pdf  used on input line 202
@@ -1646,7 +1646,7 @@ lic/amsfonts/cm/cmti10.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfonts
 0.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 /app/texlive/texmf-dist/fonts/type1/public/xypic/xyatip10.pfb></app/texlive/tex
 mf-dist/fonts/type1/public/xypic/xybtip10.pfb>
-Output written on tesis.pdf (41 pages, 20542347 bytes).
+Output written on tesis.pdf (41 pages, 20543037 bytes).
 PDF statistics:
  13277 PDF objects out of 15390 (max. 8388607)
  568 compressed objects within 6 object streams
