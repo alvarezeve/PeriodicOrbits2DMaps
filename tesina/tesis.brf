@@ -1,4 +1,11 @@
+\backcite {Olvera}{{1}{1}{chapter.1}}
+\backcite {GreeneA}{{1}{1.1}{section.1.1}}
+\backcite {Devaney3}{{2}{1.1}{equation.1.1.4}}
 \backcite {Haro}{{5}{1.2}{section.1.2}}
+\backcite {Haro}{{6}{1.2}{figure.caption.4}}
+\backcite {devaney}{{6}{1.2}{equation.1.2.17}}
+\backcite {Juergen}{{6}{1.2}{equation.1.2.17}}
 \backcite {eve}{{9}{2}{chapter.2}}
 \backcite {eve}{{11}{2.1}{equation.2.1.12}}
 \backcite {eve}{{12}{2.2}{section.2.2}}
+\backcite {Mireles}{{13}{2.2}{equation.2.2.13}}

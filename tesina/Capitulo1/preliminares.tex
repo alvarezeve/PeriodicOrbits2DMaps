@@ -5,7 +5,7 @@
 \chapter{Teor\'ia}
 Consideremos un mapeo $M$ que preserva \'area, donde $M:\mathbb{S} \times \mathbb{R} \longrightarrow \mathbb{S}\times\mathbb{R}$. El mapeo $M$ lleva puntos $v_{i}= (x_{i},y_{i})$ en puntos dados por $M(v_{i})=v_{i+1}$, donde el sub\'indice denota que se trata de la i-\'esima iteraci\'on. \\
 
-Nos interesa centrarnos en los mapeos que violan la condici\'on de no degeneraci\'on tambi\'en llamada \textit{condici\'on twist} que dice que 
+Nos interesa centrarnos en los mapeos que violan la condici\'on de no degeneraci\'on tambi\'en llamada \textit{condici\'on twist} \cite{Olvera} que dice que 
 \begin{eqnarray}
 \frac{\partial x_{i+1}}{\partial y_{i}} \neq 0.
 \label{twist condition}
@@ -14,7 +14,7 @@ Un mapeo puede violar la condici\'on \ref{twist condition} de diferentes maneras
 
 \section{Un m\'etodo para encontrar \'orbitas peri\'odicas de mapeos de 2D.}
 
-Los m\'etodos para encontrar \'orbitas peri\'odicas en mapeos de dos dimensiones son generalmente m\'etodos para encontrar ra\'ices de sistemas no lineales en dos dimensiones. En este caso se busca reducir la dimensi\'on en la que se trabaja para encontrar \'orbitas per\'iodicas. Para ello es necesario encontrar algunas simetr\'ias que reduzcan el problema a una dimensi\'on. Veremos que las \'orbitas peri\'odicas se pueden encontrar usando simetr\'ias e involuciones.\\
+Los m\'etodos para encontrar \'orbitas peri\'odicas en mapeos de dos dimensiones son generalmente m\'etodos para encontrar ra\'ices de sistemas no lineales en dos dimensiones. En este caso se busca reducir la dimensi\'on en la que se trabaja para encontrar \'orbitas per\'iodicas. Para ello es necesario encontrar algunas simetr\'ias que reduzcan el problema a una dimensi\'on. Veremos que las \'orbitas peri\'odicas se pueden encontrar usando simetr\'ias e involuciones. \cite{GreeneA}\\
 
 Decimos que el mapeo $M$ permanece invariante bajo un mapeo $T$ o que conmuta con $T$ si 
 \begin{eqnarray}
@@ -38,7 +38,7 @@ I_{1}^{-1}MI_{1} = (MI_{0})^{-1}MI_{1} = I_{0}^{-1}M^{-1}MI_{1} = I_{0}^{-1}I_{1
 y reacomodando t\'erminos obtenemos $I_{0}M^{-1}= MI_{0}$.\\
 
  
-Con las involuciones definidas arriba podemos escribir el mapeo $M$ como factorizaci\'on de las mismas
+Con las involuciones definidas arriba podemos escribir el mapeo $M$ como factorizaci\'on de las mismas \cite{Devaney3}
 \begin{eqnarray}
 M = I_{1}I_{0}.
 \end{eqnarray}
@@ -111,7 +111,7 @@ En el caso en que tengamos una \'orbita de periodo impar afirmamos el siguiente 
 	\mathbb{J}_{0} = \{v \in \mathbb{S} \times \mathbb{R} | I_{0}v = v\}
 	\end{eqnarray}
 	\begin{eqnarray}
-	\mathbb{J}_{1} = \{v \in \mathbb{S} \times \mathbb{R} | I_{1}v = v\}
+	\mathbb{J}_{1} = \{v \in \mathbb{S} \times \mathbb{R} | I_{1}v = v\}.
 	\end{eqnarray}
 	Si $v_{0}\in \mathbb{J}_{1}$ y $M^{N}v_{0}=v_{N}\in \mathbb{J}_{0}$ entonces $v_{0}$ es de periodo $2N+1$.
 \end{thm}
@@ -158,7 +158,7 @@ Con los teoremas 1 y 2 podemos enunciar el siguiente resultado.
 			\item Si $v_{0}\in \mathbb{J}_{0}$ y $M^{N}v_{0}\in \mathbb{J}_{1}$ si y s\'olo si $v_{0}$ pertenece a una \'orbita de periodo $2N-1$ de $M$.
 		\end{itemize}
 \end{corola}
-Si se conocen los conjuntos $\mathbb{J}_{0}, \mathbb{J}_{1}$ entonces la b\'usqueda de \'orbitas peri\'odicas se puede reducir a un b\'usqueda en una dimensi\'on, ya que sabemos que al menos un punto de la \'orbita estar\'an en alguno de los conjuntos.
+Si se conocen los conjuntos $\mathbb{J}_{0}, \mathbb{J}_{1}$ entonces la b\'usqueda de \'orbitas peri\'odicas se puede reducir a una b\'usqueda en una dimensi\'on, ya que sabemos que al menos un punto de la \'orbita estar\'a en alguno de los conjuntos.
 
 
 
@@ -186,7 +186,7 @@ Supongamos que $v_{*}\in\mathbb{S} \times \mathbb{R}$ es un punto fijo hiperb\'o
 \end{eqnarray}
 llamados \textit{variedades estable} e \textit{inestable} respectivamente. \\
 
-Para describir los conjuntos invariantes tomemos  $U\subset \mathbb{W}^{z}$ con $z\in \{u,s\}$ y un abierto $\Theta \subset \mathbb{R}$. Como $U$ es parte de conjunto ivariante entonces
+Para describir los conjuntos invariantes tomemos  $U\subset \mathbb{W}^{z}$ con $z\in \{u,s\}$ y un abierto $\Theta \subset \mathbb{R}$. Como $U$ es parte de un conjunto invariante entonces
 \begin{equation}
 M : U\subset \mathbb{W}^{z} \longrightarrow  U\subset \mathbb{W}^{z}.
 \end{equation}
@@ -197,10 +197,10 @@ Por otro lado podemos encontrar $\mathcal{P}:\mathbb{R}\longrightarrow\mathbb{S}
 	U\subset\mathbb{R}^{2} \ar[r]^{M} & U\subset\mathbb{R}^{2}
 }\label{conmutativo}
 \end{eqnarray}
-La funci\'on $g$ contiene la dinámica del mapeo pero sobre $\Theta$. A partir del diagrama \ref{conmutativo} obtenemos la siguiente ecuaci\'on de cohomolog\'ia. 
+La funci\'on $g$ contiene la dinámica del mapeo pero sobre $\Theta$. A partir del diagrama \ref{conmutativo} obtenemos la siguiente ecuaci\'on de cohomolog\'ia
 
 \begin{eqnarray}
-M \circ \mathcal{P} =\mathcal{P}  \circ g,  \label{Ecua de invariancia}.
+M \circ \mathcal{P} =\mathcal{P}  \circ g  \label{Ecua de invariancia}.
 \end{eqnarray}
 Una forma gr\'afica de ver lo que nos dice la ecuaci\'on \ref{Ecua de invariancia} es medainte la figura 
 \ref{diagrama-conmutativo}.
@@ -208,16 +208,16 @@ Una forma gr\'afica de ver lo que nos dice la ecuaci\'on \ref{Ecua de invarianci
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.4]{diagrama2}
-	\caption{Representación grafica del diagrama \eqref{conmutativo}.}
+	\caption{Representación gr\'afica del diagrama \eqref{conmutativo}.}
 	\label{diagrama-conmutativo}
 \end{figure}
 
-Las variables a encontrar en la ecuaci\'on \ref{Ecua de invariancia} son $\mathcal{P}$ y $g$, por lo que se necesita al menos fijar o encontrar una de ellas para poder resolver la ecuaci\'on. Para hacer esto se suelen tomar en cuenta dos formas de parametrizaci\'on definidas como \textit{la forma gr\'afica} y \textit{la forma normal}. En este caso se usa la forma gr\'afica que consiste en usar la forma local de las variedades al rededor del punto $v_{*}$. Es decir se usa que localmente la dependencia es lineal, por lo que 
+Las variables a encontrar en la ecuaci\'on \ref{Ecua de invariancia} son $\mathcal{P}$ y $g$, por lo que se necesita fijar o encontrar una de ellas para poder resolver la ecuaci\'on. Para hacer esto se suelen tomar en cuenta dos formas de parametrizaci\'on definidas como \textit{la forma gr\'afica} y \textit{la forma normal} \cite{Haro}. En este caso se usa la forma gr\'afica que consiste en usar la forma local de las variedades alrededor del punto $v_{*}$. Es decir se usa que localmente la dependencia es lineal, por lo que 
 \begin{equation}
 g(t) = \lambda t,
 \label{funciong1}
 \end{equation}
-con $t\in \mathbb{R}$ el par\'ametro, $\lambda\in \mathbb{R}$ el valor propio asociado a la linearizaci\'on del mapeo. Esta desici\'on esta apoyada en el teorema de Hartman-Grobman que declara que en una vecindad del punto fijo hiperb\'olico se puede aproximar el comportamiento del sistema mediante su linearizaci\'on. \\
+con $t\in \mathbb{R}$ el par\'ametro, $\lambda\in \mathbb{R}$ el valor propio asociado a la linearizaci\'on del mapeo. Esta desici\'on esta apoyada en el teorema de Hartman-Grobman \cite{devaney}\cite{Juergen}  que declara que en una vecindad del punto fijo hiperb\'olico se puede aproximar el comportamiento del sistema mediante su linearizaci\'on. \\
 
 Entonces usando la linearizaci\'on del mapeo y la ecuaci\'on \eqref{funciong1} se puede resolver la ecuaci\'on \eqref{Ecua de invariancia} para $\mathcal{P}$. Para ello se propone que 
 \begin{equation}

@@ -1,10 +1,36 @@
 \begin{thebibliography}{10}
 
+\bibitem{Olvera}
+A.~Olvera and C.~Sim\'o.
+\newblock An obstruction method for the destruction of invariant curves.
+\newblock {\em Physica D}, 20:181--192.
+
+\bibitem{GreeneA}
+J.~M. Greene.
+\newblock A method for determining a stochastic transition.
+\newblock {\em Journal of Mathematical Physics}, 20:1183--1201, 1979.
+
+\bibitem{Devaney3}
+R.L. Devaney.
+\newblock Reversible diffeomorphism and flows.
+\newblock {\em Transactions of the American Mathematical Society}, 218:89--113,
+  1976.
+
 \bibitem{Haro}
 Á. Haro, M.~Canadell, J.~Figueras, and A.~Luque y~J.~Mondelo.
 \newblock {\em The Parameterization Method for Invariant Manifolds}, volume 195
   of {\em Applied Mathematical Sciences}.
 \newblock Springer, 1 edition, 2010.
+
+\bibitem{devaney}
+Robert~L. Devaney.
+\newblock {\em An Introduction to Chaotic Dynamical Systems}.
+\newblock Adyson-Wesley, 2nd edition, 1989.
+
+\bibitem{Juergen}
+Juergen Quandt.
+\newblock On the {H}artman--{G}robman theorem for maps.
+\newblock {\em Journal of Differential Equations}, 64:154--164, 1986.
 
 \bibitem{eve}
 E.~Alvarez.
@@ -18,13 +44,6 @@ J.D~Mireles James.
   manifolds of the standard map.
 \newblock \url{http://cosweb1.fau.edu/~jmirelesjames/standardMapNotes.pdf},
   2007.
-
-\bibitem{Mireles2}
-Jan~Bouwe van~den Berg, J.D.~Mireles James, and Christian Reinhardt.
-\newblock Computing (un)stable manifolds with validated error bounds:
-  non-resonant and resonant spectra.
-\newblock
-  \url{http://cosweb1.fau.edu/~jmirelesjames/parametrization_draft9.pdf}, 2015.
 
 \bibitem{Meyer}
 Kenneth~R. Meyer, Glen~R. Hall, and Dan Offin.
@@ -44,21 +63,6 @@ James~D. Meiss.
   modeling and computation}.
 \newblock Society for Industrial and Applied Mathematics ,Philadelphia, 1
   edition, 2007.
-
-\bibitem{Juergen}
-Juergen Quandt.
-\newblock On the {H}artman--{G}robman theorem for maps.
-\newblock {\em Journal of Differential Equations}, 64:154--164, 1986.
-
-\bibitem{GreeneA}
-J.~M. Greene.
-\newblock A method for determining a stochastic transition.
-\newblock {\em Journal of Mathematical Physics}, 20:1183--1201, 1979.
-
-\bibitem{Olvera}
-A.~Olvera and C.~Sim\'o.
-\newblock An obstruction method for the destruction of invariant curves.
-\newblock {\em Physica D}, 20:181--192.
 
 \bibitem{Cabre}
 X.~Cabr\'e, E.~Fontich, and R.~De la~LLave.
@@ -122,11 +126,6 @@ Jack~K. Hale.
 Ferdinand Verhulst.
 \newblock {\em Nonlinear Differential Equations and Dynamical Systems}.
 \newblock Springer, 1985.
-
-\bibitem{devaney}
-Robert~L. Devaney.
-\newblock {\em An Introduction to Chaotic Dynamical Systems}.
-\newblock Adyson-Wesley, 2nd edition, 1989.
 
 \bibitem{devaney2}
 Paul Banchard, Robert~L. Devaney, and Glen~R. Hall.

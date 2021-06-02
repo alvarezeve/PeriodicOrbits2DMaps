@@ -54,7 +54,7 @@ Los conjuntos invariantes asociados a las involuciones \eqref{involucionA}, \eqr
 \label{invariantejB}
 \end{equation}
 
-Siguiendo el resultado del Corolario 1, sea $(x_{0},y_{0})\in \mathbb{J}_{0}$ si buscamos una \'orbita de periodo 2 tendremos que resolver 
+Siguiendo el resultado del Corolario 1, sea $(x_{0},y_{0})\in \mathbb{J}_{0}$ si buscamos una \'orbita de periodo dos tendremos que resolver 
 \begin{equation*}
 M_{\kappa}(x,y) = M_{\kappa}(0,y)=(1/2,y),
 \end{equation*}
@@ -62,9 +62,9 @@ lo cual se reduce a que
 \begin{equation*}
 y=1/2.
 \end{equation*}
-Entonces afirmamos que el punto $(0,1/2)$ es un punto de periodo 2, cuya\'orbita encontrada es $\{(0,1/2), (1/2,1/2)\}$. Es importante recordar que la variable $x$ est\'a definida en el intervalo $[0,1]$ por lo que se debe tomar m\'odulo 1 en esa componente. \\
+Entonces afirmamos que el punto $(0,1/2)$ es un punto de periodo dos, cuya \'orbita encontrada es $\{(0,1/2), (1/2,1/2)\}$. Es importante recordar que la variable $x$ est\'a definida en el intervalo $[0,1]$ por lo que se debe tomar m\'odulo 1 en esa componente. \\
 
-Una vez encontrada un \'orbita peri\'odica es necesario determinar la estabilidad de la misma. Usando la linearizaci\'on alrededor del punto fijo, en este caso un punto en la \'orbita se toma como punto fijo  del mapeo  $M^{n}_{k}(x_{0},y_{0})=(x_{0},y_{0})$. La estabilidad esta dada por los valores propios del jacobiano $DM^{n}_{\kappa}(x_{0},y_{0})$. Para calcular este jacobiano no hace falta hacer la composici\'on, solo hace falta usar la regla de la cadena y la \'orbita peri\'odica.
+Una vez encontrada un \'orbita peri\'odica es necesario determinar la estabilidad de la misma. Usando la linearizaci\'on alrededor del punto fijo, en este caso un punto en la \'orbita se toma como punto fijo  del mapeo  $M^{n}_{k}(x_{0},y_{0})=(x_{0},y_{0})$. La estabilidad est\'a dada por los valores propios del jacobiano $DM^{n}_{\kappa}(x_{0},y_{0})$. Para calcular este jacobiano no hace falta hacer la composici\'on, solo hace falta usar la regla de la cadena y la \'orbita peri\'odica.
 \begin{align*}
 DM^{n}_{\kappa}(x_{0},y_{0}) &= D(M_{\kappa}(M_{\kappa}(\cdots M_{\kappa}(x_{0},y_{0}))))\\
 & = DM_{\kappa}(M^{n-1}(x_{0},y_{0}))DM_{\kappa}(M^{n-2}_{\kappa}(x_{n-2},y_{n-1}))\cdots DM_{\kappa}(x_{0},y_{0})\\
@@ -98,7 +98,7 @@ x(t)=\sum_{n=0}^{\infty}a_{n}t^{n}  ,
 y(t)=\sum_{n=0}^{\infty}b_{n}t^{n},
 \label{y}
 \end{eqnarray}
-d\'onde $a_{0},b_{0}$ representan los coeficientes n-\'esimos del polinomio y tal que $\mathcal{P}(t):=(x(t),y(t))$. En cuanto a la dinámica interna $g$, se usa la ecuación $g(t)=\lambda t$ \eqref{funciong1}. Sustituyendo las variables en su expanci\'on de Taylor en $M\circ\mathcal{P}=\mathcal{P}\circ g$ \eqref{Ecua de invariancia}  y usando que $M$ es el mapeo est\'andar \eqref{mapeo estandar} obtenemos
+d\'onde $a_{0},b_{0}$ representan los coeficientes n-\'esimos del polinomio y tal que $\mathcal{P}(t):=(x(t),y(t))$. En cuanto a la dinámica interna $g$, se usa la ecuación $g(t)=\lambda t$ \eqref{funciong1}. Sustituyendo las variables en su expansi\'on de Taylor en $M\circ\mathcal{P}=\mathcal{P}\circ g$ \eqref{Ecua de invariancia}  y usando que $M$ es el mapeo est\'andar \eqref{mapeo estandar} obtenemos
 \begin{eqnarray}
 M_{\kappa}(x,y) = \left[\begin{array}{c}
 x(t) + y(t) -\frac{\kappa}{2\pi}\sin(2\pi x(t)) \\
@@ -120,7 +120,7 @@ que en forma explícita es
 \end{array}\right].
 \label{expandida}
 \end{eqnarray}
-al desarrollar las sumas y usar la serie de Taylor el seno se puede obtener una ecuaci\'on para comparar los t\'erminos de \'orden 0. 
+al desarrollar las sumas y usar la serie de Taylor del seno se puede obtener una ecuaci\'on para comparar los t\'erminos de \'orden 0. 
 
 \begin{align*}
 	\left[
@@ -153,11 +153,11 @@ Desarrollando las sumas y agrupando los t\'erminos de \'orden cero.
 	\end{array}
 	\right]
 \end{equation}
-De donde se obtiene que $a_{0},b_{0}$ son cero. An\'alogamente se pueden agrupar los de primer orden y obtener un sistema que se resulve a partir de los coeficientes $a_{0}$ y $b_{0}$. De manera sucesiva se puede obtener ecuaciones de recurrencia para encontrar los coeficientes de orden $j$, los detalles de c\'omo son estos c\'alculos se pueden consultar en \cite{eve}.
+De donde se obtiene que $a_{0},b_{0}$ son cero. An\'alogamente se pueden agrupar los de primer orden y obtener un sistema que se resuelve a partir de los coeficientes $a_{0}$ y $b_{0}$. De manera sucesiva se pueden obtener ecuaciones de recurrencia para encontrar los coeficientes de orden $j$, los detalles de c\'omo son estos c\'alculos se pueden consultar en \cite{eve}.
 
 
 \section{Implementación del método}
-La implementaci\'on del m\'etodo consiste principalmente en aplicar un m\'etodo de Newton para encontrar ra\'ices. Para encontrar las \'orbitas peri\'odicas, dado el mapeo y los conjuntos invariantes de las simetr\'ias se puede buscar una \'orbita peri\'odica de periodo $n$ usando una semilla. En la siguiente tabla se exquematiza c\'omo se calcula, sin embargo se recomienda que para mayor detalle viste \url{https://github.com/alvarezeve/Tesis-Variedades-Estables-e-inestables/}.
+La implementaci\'on del m\'etodo consiste principalmente en aplicar un m\'etodo de Newton para encontrar ra\'ices. Para encontrar las \'orbitas peri\'odicas, dado el mapeo y los conjuntos invariantes de las simetr\'ias se puede buscar una \'orbita peri\'odica de periodo $n$ usando una semilla. En la siguiente tabla se ezquematiza c\'omo se calcula, sin embargo se recomienda que para mayor detalle viste \url{https://github.com/alvarezeve/Tesis-Variedades-Estables-e-inestables/}.
 En la liga se encuentra la documentaci\'on necesaria para poder usar el m\'etodo as\'i como algunos ejemplos. \\
 \linebreak
 \linebreak
@@ -225,7 +225,7 @@ La implementaci\'on del m\'etodo de parametrizaci\'on fue resultado de un trabaj
 		\>\textbf{8.} Se aplica el mapeo a los nuevos\>$M(P_{x}+P_{y})$ \\
 		\> polinomios.\>\\
 		\>............................................................  \>..................................................\\
-		\>\textbf{9.} Se crea el polinomio \> $P_{\lambda x} = a_{0}+a_{1}\lambda t+a_{2}\lambda t^{2}+O(t^{3})$\\
+		\>\textbf{9.} Se crea el polinomio. \> $P_{\lambda x} = a_{0}+a_{1}\lambda t+a_{2}\lambda t^{2}+O(t^{3})$\\
 		\> \>$P_{\lambda y} = b_{0}+b_{1}\lambda t+b_{2}\lambda t^{2}+O(t^{3})$\\
 		\>............................................................  \>..................................................\\
 		\>\textbf{10.} Se crea una ecuación con la resta \> $M(P_{x}+P_{y}) -(P_{\lambda x},P_{\lambda y})$=0 \\
@@ -234,7 +234,7 @@ La implementaci\'on del m\'etodo de parametrizaci\'on fue resultado de un trabaj
 		\> \textbf{11.} Se resuelve la ecuación del paso 10 \>  \\
 		\> para las variables $a_{2},b_{2}$. \>\\
 		\>............................................................  \>..................................................\\
-		\> \textbf{12.} Se regresa al paso 7. y se itera\> \\
+		\> \textbf{12.} Se regresa al paso 7 y se itera\> \\
 		\> hasta que se llegue al orden deseado. \> \\
 		\>............................................................  \>..................................................\\
 		
@@ -245,12 +245,12 @@ La implementaci\'on del m\'etodo de parametrizaci\'on fue resultado de un trabaj
 \end{center}
 
 
-En ambas implementaciones se añadi\'o una forma de evaluar el error num\'erico. Para las \'orbitas peri\'odicas se tom\'o la diferencia entre el punto de la \'orbita de periodo $n$ encontrado y su n-\'esima iteraci\'on .
+En ambas implementaciones se añadi\'o una forma de evaluar el error num\'erico. Para las \'orbitas peri\'odicas se tom\'o la diferencia entre el punto de la \'orbita de periodo $n$ encontrado y su n-\'esima iteraci\'on.
 \begin{equation}
 	\mathbb{E} = ||(x_{0},y_{0})-M^{n}(x_{0},y_{0})||
 	\label{errororbitasperiodicas}
 \end{equation}
-Mientras que en el caso de las parametrizaciones el error se toma de la diferencia entre composiciones evaluada en el intervalo en el que se tom\'o la parametrizaci\'on. 
+Mientras que en el caso de las parametrizaciones el error se toma de la diferencia entre composiciones evaluada en el intervalo en el que se tom\'o la parametrizaci\'on  \cite{Mireles}. 
 \begin{equation}
 	\mathbf{E} = || M\circ \mathcal{P}- \mathcal{P}\circ g||
 \end{equation}

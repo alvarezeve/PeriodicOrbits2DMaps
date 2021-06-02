@@ -8,48 +8,46 @@ A level-1 auxiliary file: Capitulo2/parametrizacion.aux
 A level-1 auxiliary file: Capitulo3/Henon.aux
 The style file: unsrt.bst
 Database file #1: referencias.bib
-Warning--entry type for "Mireles2" isn't style-file defined
---line 21 of file referencias.bib
 Warning--empty year in Olvera
 You've used 32 entries,
             1791 wiz_defined-function locations,
-            640 strings with 7719 characters,
-and the built_in function-call counts, 5590 in all, are:
-= -- 484
-> -- 209
+            640 strings with 7587 characters,
+and the built_in function-call counts, 5628 in all, are:
+= -- 491
+> -- 202
 < -- 5
-+ -- 86
-- -- 54
-* -- 287
-:= -- 868
++ -- 84
+- -- 52
+* -- 293
+:= -- 874
 add.period$ -- 95
 call.type$ -- 32
 change.case$ -- 28
 chr.to.int$ -- 0
 cite$ -- 33
-duplicate$ -- 280
-empty$ -- 637
-format.name$ -- 54
-if$ -- 1302
+duplicate$ -- 284
+empty$ -- 641
+format.name$ -- 52
+if$ -- 1310
 int.to.chr$ -- 0
 int.to.str$ -- 32
-missing$ -- 41
+missing$ -- 42
 newline$ -- 160
 num.names$ -- 28
-pop$ -- 144
+pop$ -- 139
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
 skip$ -- 97
 stack$ -- 0
-substring$ -- 177
+substring$ -- 195
 swap$ -- 42
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 36
+while$ -- 37
 width$ -- 34
-write$ -- 338
-(There were 2 warnings)
+write$ -- 339
+(There was 1 warning)
